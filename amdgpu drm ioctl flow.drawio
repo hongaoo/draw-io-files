@@ -1,68 +1,127 @@
-<mxfile host="app.diagrams.net" modified="2022-04-11T12:04:52.258Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="XRgORsM6A3qQfokdVttj" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-11T13:34:44.627Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="D1ojshkUM7kVlUurTY5t" version="17.4.0" type="github">
   <diagram id="6B9ATKtcE2n3EENaYv02" name="Page-1">
-    <mxGraphModel dx="1185" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2012" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="llXkI1soiZE1zbif7xeh-1" value="&lt;div&gt;static const struct file_operations amdgpu_driver_kms_fops = {&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.owner = THIS_MODULE,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.open = drm_open,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.flush = amdgpu_flush,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.release = drm_release,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.unlocked_ioctl = amdgpu_drm_ioctl,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.mmap = amdgpu_mmap,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.poll = drm_poll,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.read = drm_read,&lt;/div&gt;&lt;div&gt;#ifdef CONFIG_COMPAT&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.compat_ioctl = amdgpu_kms_compat_ioctl,&lt;/div&gt;&lt;div&gt;#endif&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="60" width="380" height="210" as="geometry" />
+          <mxGeometry x="140" y="60" width="380" height="210" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-2" target="llXkI1soiZE1zbif7xeh-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-2" value="long amdgpu_drm_ioctl&lt;span&gt;(struct file *filp,&lt;/span&gt;&lt;span&gt;unsigned int cmd, unsigned long arg)&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="55" y="360" width="410" height="40" as="geometry" />
+          <mxGeometry x="140" y="360" width="410" height="40" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-3" target="llXkI1soiZE1zbif7xeh-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-3" value="&lt;div&gt;long drm_ioctl(struct file *filp,&amp;nbsp;&lt;span&gt;unsigned int cmd, unsigned long arg)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="430" width="400" height="30" as="geometry" />
+          <mxGeometry x="610" y="410" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-4" target="llXkI1soiZE1zbif7xeh-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-4" value="drm_ioctl_kernel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="740" y="490" width="120" height="40" as="geometry" />
+          <mxGeometry x="669.5" y="480" width="120" height="40" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-5" target="llXkI1soiZE1zbif7xeh-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-5" value="drm_connector_property_set_ioctl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="675" y="560" width="250" height="30" as="geometry" />
+          <mxGeometry x="642.5" y="555" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.446;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=18;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-6" target="llXkI1soiZE1zbif7xeh-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-6" value="drm_mode_obj_set_property_ioctl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="692.5" y="620" width="215" height="30" as="geometry" />
+          <mxGeometry x="625" y="620" width="215" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.486;entryY=-0.078;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=12;exitX=0.444;exitY=0.978;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-7" target="llXkI1soiZE1zbif7xeh-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-7" value="amdgpu_connector_set_property" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="100" y="670" width="270" height="30" as="geometry" />
+          <mxGeometry x="230" y="660" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-8" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="300" y="50" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="llXkI1soiZE1zbif7xeh-9" value="xrandr --output HDMI-A-2 --set &#39;scaling mode&#39; &#39;None&#39; control flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="70" y="10" width="380" height="30" as="geometry" />
+        <mxCell id="llXkI1soiZE1zbif7xeh-9" value="oland card&lt;br&gt;xrandr --output HDMI-A-2 --set &#39;scaling mode&#39; &#39;None&#39; control flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="10" width="690" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-16" target="llXkI1soiZE1zbif7xeh-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-16" value="static amdgpu_connector_property_change_mode&lt;br&gt;对amdgpu_encoder-&amp;gt;rmx_type 赋值 rmx_type" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="50" y="730" width="350" height="30" as="geometry" />
+          <mxGeometry x="180" y="730" width="350" height="30" as="geometry" />
         </mxCell>
         <mxCell id="llXkI1soiZE1zbif7xeh-17" value="drm_crtc_helper_set_mode" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="645" y="770" width="310" height="30" as="geometry" />
+          <mxGeometry x="632" y="800" width="195" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="llXkI1soiZE1zbif7xeh-21" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1040" y="730" width="20" height="120" as="geometry" />
+        <mxCell id="llXkI1soiZE1zbif7xeh-24" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="827" y="695" width="580" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="llXkI1soiZE1zbif7xeh-22" value="drm_encoder_helper_funcs-&amp;gt;mode_fixup&lt;span&gt;(encoder, mode,&lt;/span&gt;&lt;span&gt;adjusted_mode)&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1060" y="710" width="560" height="30" as="geometry" />
+        <mxCell id="llXkI1soiZE1zbif7xeh-21" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;" vertex="1" parent="llXkI1soiZE1zbif7xeh-24">
+          <mxGeometry y="65" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-22" value="const struct drm_encoder_helper_funcs *encoder_funcs;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;const struct drm_crtc_helper_funcs *crtc_funcs ;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;br&gt;&lt;/span&gt;for_each encoder_funcs-&amp;gt;mode_fixup(encoder, mode,adjusted_mode)&lt;br&gt;crtc_funcs -&amp;gt;mode_fixup(crtc, mode,adjusted_mode)&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;for_each&amp;nbsp; encoder_funcs -&amp;gt;prepare(encoder)&lt;br&gt;&lt;span&gt;const struct drm_crtc_helper_funcs *crtc_funcs -&amp;gt; prepare(crtc)&lt;br&gt;&lt;br&gt;const struct drm_crtc_helper_funcs *crtc_funcs-&amp;gt;mode_set(crtc, mode, adjusted_mode, x, y, old_fb)&lt;br&gt;&lt;/span&gt;for_each&amp;nbsp; encoder_funcs -&amp;gt;mode_set(encoder, mode, adjusted_mode)&lt;br&gt;&lt;br&gt;crtc_funcs-&amp;gt;commit(crtc);&lt;br&gt;for_each&amp;nbsp; encoder_funcs-&amp;gt;commit(encoder)&lt;br&gt;&amp;nbsp;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="llXkI1soiZE1zbif7xeh-24">
+          <mxGeometry x="20" width="560" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-28" value="amdgpu_device_ip_block_add(adev, &amp;amp;dce_v6_0_ip_block);" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="250" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-29" value="&lt;span&gt;si_set_ip_blocks&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1690" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-30" value="&lt;font style=&quot;font-size: 15px&quot;&gt;oland card&lt;br&gt;amdgpu 初始流程&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1620" y="20" width="290" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-31" target="llXkI1soiZE1zbif7xeh-33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2152" y="350" />
+              <mxPoint x="2152" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-31" value="&lt;div&gt;const struct amdgpu_ip_block_version dce_v6_0_ip_block =&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.type = AMD_IP_BLOCK_TYPE_DCE,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.major = 6,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.minor = 0,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.rev = 0,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.funcs = &amp;amp;dce_v6_0_ip_funcs,&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="220" width="440" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-32" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=12;size=0;" vertex="1" parent="1">
+          <mxGeometry x="1940" y="220" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-33" value="&lt;div&gt;static const struct amd_ip_funcs dce_v6_0_ip_funcs = {&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.name = &quot;dce_v6_0&quot;,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.early_init = dce_v6_0_early_init,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.late_init = NULL,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.sw_init = dce_v6_0_sw_init,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.sw_fini = dce_v6_0_sw_fini,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.hw_init = dce_v6_0_hw_init,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.hw_fini = dce_v6_0_hw_fini,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.suspend = dce_v6_0_suspend,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.resume = dce_v6_0_resume,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.is_idle = dce_v6_0_is_idle,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.wait_for_idle = dce_v6_0_wait_for_idle,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.soft_reset = dce_v6_0_soft_reset,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.set_clockgating_state = dce_v6_0_set_clockgating_state,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.set_powergating_state = dce_v6_0_set_powergating_state,&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1950" y="390" width="403" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-34" target="llXkI1soiZE1zbif7xeh-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-34" value="dce_v6_0_early_init" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1680" y="645" width="120" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-35" target="llXkI1soiZE1zbif7xeh-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-35" value="dce_v6_0_set_display_funcs&lt;br&gt;adev-&amp;gt;mode_info.funcs = &amp;amp;dce_v6_0_display_funcs;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1654" y="710" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="1" source="llXkI1soiZE1zbif7xeh-37" target="llXkI1soiZE1zbif7xeh-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-37" value="&lt;div&gt;static const struct amdgpu_display_funcs dce_v6_0_display_funcs = {&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.bandwidth_update = &amp;amp;dce_v6_0_bandwidth_update,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.vblank_get_counter = &amp;amp;dce_v6_0_vblank_get_counter,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.backlight_set_level = &amp;amp;amdgpu_atombios_encoder_set_backlight_level,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.backlight_get_level = &amp;amp;amdgpu_atombios_encoder_get_backlight_level,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.hpd_sense = &amp;amp;dce_v6_0_hpd_sense,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.hpd_set_polarity = &amp;amp;dce_v6_0_hpd_set_polarity,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.hpd_get_gpio_reg = &amp;amp;dce_v6_0_hpd_get_gpio_reg,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.page_flip = &amp;amp;dce_v6_0_page_flip,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.page_flip_get_scanoutpos = &amp;amp;dce_v6_0_crtc_get_scanoutpos,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.add_encoder = &amp;amp;dce_v6_0_encoder_add,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.add_connector = &amp;amp;amdgpu_connector_add,&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1935" y="642.5" width="510" height="215" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-40" value="dce_v6_0_encoder_add" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="935" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-42" value="&lt;font style=&quot;font-size: 11px&quot;&gt;dce_v6_0_dac_helper_funcs&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="980" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-43" value="dce_v6_0_ext_helper_funcs" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2340" y="980" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-44" value="dce_v6_0_dig_helper_funcs" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="980" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
