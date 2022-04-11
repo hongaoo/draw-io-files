@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-04-08T09:22:52.939Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" version="17.4.0" etag="Q_rwNhwG7Var9o1XeHus" type="github"><diagram id="6B9ATKtcE2n3EENaYv02">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-04-11T08:02:15.299Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="fQS7mpOzu-V0Ev3GJ8mu" version="17.4.0" type="github">
+  <diagram id="6B9ATKtcE2n3EENaYv02" name="Page-1">
+    <mxGraphModel dx="1673" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="llXkI1soiZE1zbif7xeh-1" value="&lt;div&gt;static const struct file_operations amdgpu_driver_kms_fops = {&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.owner = THIS_MODULE,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.open = drm_open,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.flush = amdgpu_flush,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.release = drm_release,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.unlocked_ioctl = amdgpu_drm_ioctl,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.mmap = amdgpu_mmap,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.poll = drm_poll,&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.read = drm_read,&lt;/div&gt;&lt;div&gt;#ifdef CONFIG_COMPAT&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;.compat_ioctl = amdgpu_kms_compat_ioctl,&lt;/div&gt;&lt;div&gt;#endif&lt;/div&gt;&lt;div&gt;};&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="30" width="380" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-2" value="long amdgpu_drm_ioctl&lt;span&gt;(struct file *filp,&lt;/span&gt;&lt;span&gt;unsigned int cmd, unsigned long arg)&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="410" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-3" value="&lt;div&gt;long drm_ioctl(struct file *filp,&amp;nbsp;&lt;span&gt;unsigned int cmd, unsigned long arg)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="410" width="400" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-4" value="drm_ioctl_kernel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-5" value="drm_connector_property_set_ioctl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="600" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-6" value="drm_mode_obj_set_property_ioctl" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="707.5" y="710" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="llXkI1soiZE1zbif7xeh-7" value="amdgpu_connector_set_property" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="810" width="270" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
