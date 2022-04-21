@@ -1,12 +1,9 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T09:56:54.893Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="j8BihPDC8a-E2roRjR7-" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-21T10:13:00.918Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="2f9lRF-4BiN_BdjWL2hc" version="17.4.6" type="github">
   <diagram id="hGFMNqmb2zfe9tHskcBW" name="Page-1">
     <mxGraphModel dx="2249" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GLmPlQLurBmdkAW1gnxs-1" value="int amdgpu_device_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-690" y="115" width="140" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-2" value="amdgpu_device_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-473" y="440" width="120" height="20" as="geometry" />
         </mxCell>
@@ -14,7 +11,7 @@
           <mxGeometry x="-230" y="510" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-4" value="ratelimit_state_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-190" y="220" width="110" height="20" as="geometry" />
+          <mxGeometry x="-200" y="215" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-5" value="amdgpu_device_doorbell_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-220" y="700" width="170" height="20" as="geometry" />
@@ -30,14 +27,14 @@
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-11" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-320" y="860" as="sourcePoint" />
-            <mxPoint x="-320" y="200" as="targetPoint" />
+            <mxPoint x="-320" y="1520" as="sourcePoint" />
+            <mxPoint x="-320" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-12" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="70" y="860" as="sourcePoint" />
-            <mxPoint x="70" y="200" as="targetPoint" />
+            <mxPoint x="70" y="1510" as="sourcePoint" />
+            <mxPoint x="70" y="110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-13" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
@@ -81,9 +78,66 @@
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-21" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="440" y="860" as="sourcePoint" />
-            <mxPoint x="440" y="200" as="targetPoint" />
+            <mxPoint x="440" y="1520" as="sourcePoint" />
+            <mxPoint x="440" y="120" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-22" value="amdgpu_device_init_apu_flags" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="115" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-23" value="amdgpu_device_check_arguments" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-235" y="165" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-24" value="&lt;div&gt;&lt;span&gt;	&lt;/span&gt;/* Registers mapping */&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span&gt;	&lt;/span&gt;/* TODO: block userspace mapping of io register */&lt;/div&gt;adev-&amp;gt;rmmio = ioremap(adev-&amp;gt;rmmio_base, adev-&amp;gt;rmmio_size);" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="250" width="360" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-25" value="pci_enable_atomic_ops_to_root" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="310" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-26" value="amdgpu_device_get_pcie_info" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="350" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-27" value="amdgpu_detect_virtualization" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="380" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-28" value="amdgpu_device_get_job_timeout_settings" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="430" width="240" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-29" value="amdgpu_reset_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="750" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-30" value="amdgpu_device_detect_sriov_bios" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="800" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-31" value="pci_enable_pcie_error_reporting" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-225" y="860" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-32" value="...." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="920" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-33" value="amdgpu_fence_driver_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="980" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-34" value="...." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="1110" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-35" value="amdgpu_fbdev_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-205" y="1160" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-36" value="amdgpu_pm_sysfs_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="1210" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-37" value="&lt;div&gt;&lt;span&gt;	&lt;/span&gt;/* init the mode config */&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;drm_mode_config_init(adev_to_drm(adev));&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="1010" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-38" value="amdgpu_device_ip_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="1070" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-39" value="amdgpu_test_moves" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-215" y="1270" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-40" value="amdgpu_benchmark" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1340" width="120" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
