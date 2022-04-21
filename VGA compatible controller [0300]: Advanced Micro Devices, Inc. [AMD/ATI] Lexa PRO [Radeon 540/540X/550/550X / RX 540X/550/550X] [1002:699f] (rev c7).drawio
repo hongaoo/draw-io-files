@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T09:45:30.264Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="j1F1_rPLmckjC2d5EM7O" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-21T09:48:24.164Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="j3Fni_QvL7lOMo5oXPWE" version="17.4.6" type="github">
   <diagram id="hGFMNqmb2zfe9tHskcBW" name="Page-1">
     <mxGraphModel dx="2249" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="-473" y="440" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-3" value="amdgpu_device_ip_early_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-210" y="440" width="170" height="20" as="geometry" />
+          <mxGeometry x="-230" y="510" width="170" height="20" as="geometry" />
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-4" value="ratelimit_state_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="-190" y="220" width="110" height="20" as="geometry" />
@@ -45,6 +45,21 @@
             <mxPoint x="690" y="515" as="sourcePoint" />
             <mxPoint x="1010" y="290" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-14" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-30" y="510" as="sourcePoint" />
+            <mxPoint x="100" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-15" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#FF3333;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="570" as="sourcePoint" />
+            <mxPoint x="-30" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-16" value="amdgpu_amdkfd_device_probe" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="90" y="500" width="180" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
