@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T10:25:21.867Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="ZHc9jXWg5fPdP262XwkC" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-29T03:49:34.573Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="O_3JAQokUB8tkpAWyAeF" version="17.4.6" type="github">
   <diagram id="hGFMNqmb2zfe9tHskcBW" name="Page-1">
-    <mxGraphModel dx="2249" dy="755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3078" dy="1184" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -142,8 +142,8 @@
         <mxCell id="GLmPlQLurBmdkAW1gnxs-41" value="amdgpu_register_gpu_instance" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-225" y="1420" width="180" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="GLmPlQLurBmdkAW1gnxs-42" value="adev-&amp;gt;ip_blocks[i].version-&amp;gt;funcs-&amp;gt;sw_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="150" y="980" width="240" height="20" as="geometry" />
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-42" value="for (i = 0; i &amp;lt; adev-&amp;gt;num_ip_blocks; i++) {&lt;br&gt;adev-&amp;gt;ip_blocks[i].version-&amp;gt;funcs-&amp;gt;sw_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="150" y="975" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-43" value="" style="endArrow=classic;html=1;rounded=0;fontColor=#000000;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -177,6 +177,9 @@
         </mxCell>
         <mxCell id="GLmPlQLurBmdkAW1gnxs-51" value="amdgpu_device_ip_late_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-225" y="1480" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="GLmPlQLurBmdkAW1gnxs-52" value="for (i = 0; i &amp;lt; adev-&amp;gt;num_ip_blocks; i++) {&lt;br&gt;adev-&amp;gt;ip_blocks[i].version-&amp;gt;funcs-&amp;gt;late_init" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="145" y="1465" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
