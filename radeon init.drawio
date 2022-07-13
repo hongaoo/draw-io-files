@@ -1,14 +1,35 @@
-<mxfile host="app.diagrams.net" modified="2022-06-13T07:52:52.652Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="T4ji-A6vIMeYDwSaXO2K" version="19.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-13T06:02:39.087Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="lAnm6pZJsENxGb571-Xy" version="20.0.4" type="github">
   <diagram id="4CNQ540ASdvcl2rnZniQ" name="Page-1">
     <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="xZIAH9KeohgB5e4JCE6H-2" value="rdev-&amp;gt;num_crtc显卡的crtc数量如何获取？&lt;br&gt;radeon_asic_init根据芯片型号硬编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="xZIAH9KeohgB5e4JCE6H-2" value="rdev-&amp;gt;num_crtc显卡的crtc数量如何获取？&lt;br&gt;radeon_asic_init根据芯片型号硬编码" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="70" y="401" width="240" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="xZIAH9KeohgB5e4JCE6H-3" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace, &amp;quot;Droid Sans Fallback&amp;quot;; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_driver_load_kms - Main load function for KMS.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@dev:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; drm dev pointer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@flags:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; device flags&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * This is the main load function for KMS (all asics).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * It calls radeon_device_init() to set up the non-display&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * parts of the chip (asic init, CP, writeback, etc.), and&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_modeset_init() to set up the display parts&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * (crtcs, encoders, hotplug detect, etc.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * Returns 0 on success, error on failure.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; */&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="xZIAH9KeohgB5e4JCE6H-3" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace, &amp;quot;Droid Sans Fallback&amp;quot;; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_driver_load_kms - Main load function for KMS.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@dev:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; drm dev pointer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@flags:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; device flags&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * This is the main load function for KMS (all asics).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * It calls radeon_device_init() to set up the non-display&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * parts of the chip (asic init, CP, writeback, etc.), and&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_modeset_init() to set up the display parts&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * (crtcs, encoders, hotplug detect, etc.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * Returns 0 on success, error on failure.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; */&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="490" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-1" value="radeon_modeset_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-2" value="drm_mode_config_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="680" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-3" value="radeon_modeset_create_props" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="25" y="790" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-4" value="radeon_i2c_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-6" value="radeon_crtc_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-7" value="radeon_setup_enc_conn" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-8" value="radeon_lvds_get_modes" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1440" width="210" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
