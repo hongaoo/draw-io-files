@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-13T06:05:16.015Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="-ytvBgBxj8a6MjwQ8o6P" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-14T06:07:56.948Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="ylF6jnOCRTh1Bjv4gAsw" version="20.0.4" type="github">
   <diagram id="4CNQ540ASdvcl2rnZniQ" name="Page-1">
-    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,46 +10,195 @@
         <mxCell id="xZIAH9KeohgB5e4JCE6H-3" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;div style=&quot;color: rgb(212, 212, 212); background-color: rgb(30, 30, 30); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace, &amp;quot;Droid Sans Fallback&amp;quot;; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;/**&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_driver_load_kms - Main load function for KMS.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@dev:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; drm dev pointer&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;@flags:&lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; device flags&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; *&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * This is the main load function for KMS (all asics).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * It calls radeon_device_init() to set up the non-display&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * parts of the chip (asic init, CP, writeback, etc.), and&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * radeon_modeset_init() to set up the display parts&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * (crtcs, encoders, hotplug detect, etc.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; * Returns 0 on success, error on failure.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt; */&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="10" y="10" width="490" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-1" value="radeon_modeset_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="570" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-2" value="drm_mode_config_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="30" y="680" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-3" value="radeon_modeset_create_props" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="25" y="790" width="190" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-4" value="radeon_i2c_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="920" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-6" value="radeon_crtc_init" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1020" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-7" value="radeon_setup_enc_conn" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1140" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;radeon_lvds_get_modes&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1420" width="210" height="60" as="geometry" />
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.542;entryY=-0.067;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-9" target="qHxluCfbWNKOQf0_pbnH-13">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qHxluCfbWNKOQf0_pbnH-9" value="radeon_connector_get_edid" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1550" width="210" height="60" as="geometry" />
+          <mxGeometry x="594.5" y="1050" width="190" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-12" target="qHxluCfbWNKOQf0_pbnH-14">
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-12" target="qHxluCfbWNKOQf0_pbnH-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.461;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-12" target="qHxluCfbWNKOQf0_pbnH-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-12" value="ret&amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="591.5" y="1150" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-13" target="qHxluCfbWNKOQf0_pbnH-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-13" value="ret= radeon_ddc_get_modes" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="574.5" y="1100" width="215" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-14" target="qHxluCfbWNKOQf0_pbnH-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-14" value="start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="626" y="980" width="127" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-16" target="qHxluCfbWNKOQf0_pbnH-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-16" value="drm_fb_helper_initial_config" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1930" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-17" target="qHxluCfbWNKOQf0_pbnH-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-17" value="drm_client_modeset_probe" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1930" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-18" value="drm_helper_probe_single_connector_modes" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="890" y="2046.25" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-19" target="qHxluCfbWNKOQf0_pbnH-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-19" value="radeon_driver_load_kms" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="1930" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-20" target="qHxluCfbWNKOQf0_pbnH-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-20" value="radeon_modeset_init" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1930" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-21" target="qHxluCfbWNKOQf0_pbnH-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-21" value="radeon_fbdev_init" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="284" y="1930" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-22" target="qHxluCfbWNKOQf0_pbnH-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-22" value="DRM_IOCTL_DEF&lt;br&gt;drm_mode_getconnector" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="620" y="2042.5" width="200" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-23" target="qHxluCfbWNKOQf0_pbnH-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-23" value="drm_fb_helper_hotplug_event" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="433" y="1980" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-33" target="qHxluCfbWNKOQf0_pbnH-18">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="710" y="1810" />
-              <mxPoint x="710" y="1330" />
+              <mxPoint x="850" y="2170" />
+              <mxPoint x="850" y="2069" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-12" value="ret&amp;gt;0" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="230" y="1770" width="200" height="80" as="geometry" />
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-33" value="drm_sysfs.c: status_store" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="630" y="2150" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-13" value="ret= radeon_ddc_get_modes" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="200" y="1650" width="280" height="60" as="geometry" />
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.474;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;exitPerimeter=0;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-35" target="qHxluCfbWNKOQf0_pbnH-36">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-14" value="start" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="275" y="1300" width="120" height="60" as="geometry" />
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-35" value="encoder = radeon_best_single_encoder(connector);" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1210" width="330" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="694" y="1340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="700" y="1570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="850" y="1300" />
+              <mxPoint x="850" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-36" value="encoder" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="603.5" y="1280" width="185" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-37" target="qHxluCfbWNKOQf0_pbnH-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-37" value="radeon_fixup_lvds_native_mode" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="574" y="1345" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-38" target="qHxluCfbWNKOQf0_pbnH-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-38" value="radeon_add_common_modes" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="586.5" y="1415" width="215" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-39" target="qHxluCfbWNKOQf0_pbnH-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-39" value="mode =&amp;nbsp;radeon_fp_native_mode" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="248.5" y="1345" width="250" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-40" target="qHxluCfbWNKOQf0_pbnH-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-40" value="encoder = radeon_best_single_encoder" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1210" width="270" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-41" target="qHxluCfbWNKOQf0_pbnH-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-41" value="mode" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="273.5" y="1400" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-42" target="qHxluCfbWNKOQf0_pbnH-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-42" value="drm_mode_probed_add" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="276.5" y="1471" width="195" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-43" value="radeon_add_common_modes" style="whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="274.5" y="1526" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-46" target="qHxluCfbWNKOQf0_pbnH-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=14;" edge="1" parent="1" source="qHxluCfbWNKOQf0_pbnH-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="1570" as="targetPoint" />
+            <mxPoint x="281" y="1290" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="200" y="1290" />
+              <mxPoint x="200" y="1570" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-46" value="encoder" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="285" y="1270" width="179" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-59" value="end" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1600" width="127" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-60" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="695" y="1175" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-61" value="N&lt;br&gt;未读取到edid信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="475" y="1125" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-66" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="385" y="1305" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-67" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="705" y="1315" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-68" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="805" y="1265" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-69" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1265" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-70" value="N" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="235" y="1388" width="30" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
