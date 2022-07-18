@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-07-14T06:07:56.948Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="ylF6jnOCRTh1Bjv4gAsw" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-18T01:08:20.033Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Safari/537.36" etag="ZogEL1dvzyQEza4YaMyF" version="20.0.4" type="github">
   <diagram id="4CNQ540ASdvcl2rnZniQ" name="Page-1">
-    <mxGraphModel dx="2249" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3197" dy="1137" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -182,8 +182,8 @@
         <mxCell id="qHxluCfbWNKOQf0_pbnH-60" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="695" y="1175" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="qHxluCfbWNKOQf0_pbnH-61" value="N&lt;br&gt;未读取到edid信息" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="475" y="1125" width="130" height="50" as="geometry" />
+        <mxCell id="qHxluCfbWNKOQf0_pbnH-61" value="N&lt;br&gt;未能通过edid获取显示模式" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="445" y="1125" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="qHxluCfbWNKOQf0_pbnH-66" value="Y" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=14;" vertex="1" parent="1">
           <mxGeometry x="385" y="1305" width="30" height="30" as="geometry" />
